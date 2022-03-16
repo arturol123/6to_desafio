@@ -1,0 +1,172 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@import "Variables.scss";
+@import "_Conciertos.scss";
+@import "Discografia";
+@import "_Galeria.scss";
+
+
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+div{
+    width: 100%;
+    
+    img{width: 100%;
+
+    }
+}
+
+// Iconos de todas las HTML
+
+#icons{
+        
+    display: flex;
+    width: 100%;
+    position: relative;
+    justify-content:end;
+    margin-top: 20px;
+    
+    .bi-twitter{
+        font-size: 30px;
+        margin-right:  10px;
+    }
+    
+    .bi-whatsapp{
+        font-size: 30px;
+        margin-right:  10px;
+    }
+    
+    .bi-instagram{
+        font-size: 30px; 
+        margin-right:  10px;
+    }
+
+    .bi-twitter:hover{
+        color: $BlueColor;
+    }
+    
+    .bi-whatsapp:hover{
+        color: green;
+    }
+    
+    .bi-instagram:hover{
+        color: $RedColor;
+    }
+    
+}
+
+//Inicio de media Query con ancho minimo de 480px
+@media only screen and (min-width:480px){ 
+    div{
+        width: 100%;
+        h2{
+            margin-top: 20px;
+            padding-left: 50px;
+            font-style: oblique;
+            color: $BlueColor;
+            font-size: 30px;
+        }   
+    }
+
+
+    main{
+        width: 100%;  
+        background-color: rgb(108, 108, 216); 
+
+        section{
+            margin-left: 50px;
+            margin-right: 50px;
+            background-color: rgb(174, 21, 54);
+
+            #Imag2{
+                display:block;
+                margin:auto;
+                height: 200px;
+                width: 350px;   
+            }
+
+            p{
+                font-size:20px;
+            }
+            
+        }
+        
+    }
+
+// Footer de todos los html
+    .container-xl{
+         height: 40vw;
+
+        .d-flex{
+            margin-top: 20px;
+        }
+           
+    }
+
+    #exampleFormControlInput1{
+        width: 50%;
+        margin-left: 20px;
+    }
+
+    #exampleFormControlTextarea1{
+        width: 50%;
+        margin-left: 20px;
+
+    }
+
+}
+
+@media only screen and ( max-width:480px){
+
+
+
+    div{
+        width: 100%;
+        h2{
+            margin-top: 20px;
+            padding-left: 50px;
+            font-style: oblique;
+            color: $BlueColor;
+            font-size: 20px;
+        }   
+    }
+
+
+    main{
+        width: 100%;  
+        background-color: rgb(108, 108, 216); 
+
+        section{
+            margin-left: 20px;
+            margin-right: 20px;
+            background-color: rgb(174, 21, 54);
+
+            #Imag2{
+                display:block;
+                margin:auto;
+                height: 100px;
+                width: 200px;   
+            }
+
+            p{
+                font-size:13px;
+            }
+            
+        }
+        
+    }
+
+// Footer de todos los html
+    .container-xl{
+         height: 20vw;
+
+        .d-flex{
+            margin-top: 10px;
+        }
+           
+    }
+}
+
